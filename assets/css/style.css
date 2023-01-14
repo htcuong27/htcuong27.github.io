@@ -928,10 +928,14 @@ body {
 }
 
 .property--highlight {
-  color: #00b578;
-  border: 1px solid black;
-  border-radius: 8px;
-  padding: 2px;
-  background: black;
-  width: fit-content;
+  font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #00b578;
+    padding: 4px 12px;
+    background: #d8ffeb;
+    border-radius: 8px;
+    width: fit-content;
 }

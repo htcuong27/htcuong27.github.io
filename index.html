@@ -1,15 +1,314 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="utf-8">
-  <title>MyApp</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <style type="text/css">@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fABc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCBc4AMP6lbBP.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
-  <style type="text/css">@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
-<style>html,body{height:100%}body{background-color:gray;margin:0;font-family:Roboto,Helvetica Neue,sans-serif}</style><link rel="stylesheet" href="styles.d4ae89fc003c65a7.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.d4ae89fc003c65a7.css"></noscript></head>
-<body>
-  <app-root></app-root>
-<script src="runtime.0c852be11c3cec7b.js" type="module"></script><script src="polyfills.cc8818b73a13d6f4.js" type="module"></script><script src="main.f670e95b58b2947c.js" type="module"></script>
+<!DOCTYPE html>
+<html class="notranslate" lang="vi" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <base href="/" />
+    <title>HUYNH TAN CUONG</title>
+    <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css" >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" >
+  </head>
 
-</body></html>
+  <body>
+    <div class="loading">
+      <div class="loading__container">
+        <div class="chaotic-orbit"></div>
+      </div>
+    </div>
+    <div class="portfolio">
+      <div class="portfolio__profile">
+        <div class="portfolio__card">
+          <div class="portfolio__card-item">
+            <div class="portfolio__attribute">
+              <img
+                class="portfolio__card-item-avatar"
+                src="./assets/images/avatar.png"
+              />
+              <div class="portfolio__card-item-name">HUYNH TAN CUONG</div>
+              <div class="portfolio__card-item-title">Frontend Developer</div>
+              <div class="portfolio__card-item-description">
+                <span style="filter: brightness(0.5)">Skills: </span>Javascript
+                (ES6+), Typescript, Angular, React
+              </div>
+            </div>
+            <hr class="portfolio__line" />
+            <div class="portfolio__item">
+              <div class="portfolio__card-attribute-detail">
+                <div class="portfolio__card-attribute-detail-icon">
+                  <span class="material-symbols-outlined">mail</span>
+                </div>
+                <div class="portfolio__card-attribute-detail-describe">
+                  <div class="portfolio__card-attribute-detail-title">
+                    Email
+                  </div>
+                  <div class="portfolio__card-attribute-detail-value">
+                    cuong.htan27@gmail.com
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio__card-attribute-detail">
+                <div class="portfolio__card-attribute-detail-icon">
+                  <span class="material-symbols-outlined">phone_iphone</span>
+                </div>
+                <div class="portfolio__card-attribute-detail-describe">
+                  <div class="portfolio__card-attribute-detail-title">
+                    Phone
+                  </div>
+                  <div class="portfolio__card-attribute-detail-value">
+                    0968453367
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio__card-attribute-detail">
+                <div class="portfolio__card-attribute-detail-icon">
+                  <span class="material-symbols-outlined">cake</span>
+                </div>
+                <div class="portfolio__card-attribute-detail-describe">
+                  <div class="portfolio__card-attribute-detail-title">
+                    Birthday
+                  </div>
+                  <div class="portfolio__card-attribute-detail-value">
+                    27/12/1996
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__describe">
+        <div class="portfolio__card">
+          <div class="portfolio__card-describe">
+            <div class="portfolio__card-describe-item">
+              <div class="portfolio__card-describe-item-title">About me</div>
+              <div class="portfolio__card-describe-item-description" aria-hidden="true">
+                With more 3 years of experience in application development. I am
+                interested in working as part of a diverse and dynamic technical
+                team developing engaging web experiences using cutting-edge
+                technologies; and am passionate about bringing my skills,
+                creativity, experience, work ethic, and thirst for learning to
+                new challenges and opportunities.
+              </div>
+            </div>
+            <div class="portfolio__card-describe-item">
+              <div class="portfolio__card-describe-item-title">Experience</div>
+              <div class="portfolio__card-describe-item-experience">
+                <div class="portfolio__card-describe-item-experience-attribute">
+                  <img
+                    class="portfolio__card-describe-item-experience-company"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Zalo_logo_2019.svg/2560px-Zalo_logo_2019.svg.png"
+                    alt="Zalo"
+                  />
+                  <div class="portfolio__card-describe-item-experience-year">
+                    <span class="property--highlight">Time:</span> 9-2021 - present
+                  </div>
+                  <div>
+                    <span class="property--highlight">Project:</span> Zalo Home & Car
+                  </div>
+                  <div class="portfolio__card-describe-item-experience-title">
+                    <span class="property--highlight">Title: </span>Software Engineer
+                  </div>
+                  <div
+                    class="portfolio__card-describe-item-experience-description"
+                  >
+                    <span class="property--highlight">Description:</span> Zalo Home
+                    & Car is one of the projects in the Zalo eco-system which is
+                    a marketplace for connecting buyers with sellers which
+                    provides real estate or cars for sale and rental. This
+                    platform has three main entities including the seller,
+                    buyer, and listing.
+                  </div>
+                  <div class="property--highlight">Responsibilities:</div>
+                  <ul
+                    class="portfolio__card-describe-item-experience-responsibilities"
+                  >
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                      Do real estate-related features such as project listings,
+                      follow-up news, listing management, and seller and buyer
+                      message management,...
+                    </li>
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                      Build a news push service and advanced utilities to help
+                      sellers listings attract buyers on the marketplace
+                    </li>
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                      Revamp the home page, intro page, and listing page to
+                      increase the experience users and pull traffic to stay
+                    </li>
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                      Make banners to display ads for brands about real estate
+                      or cars that need to be displayed based on display time
+                    </li>
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                      Build support tools for the operation department
+                    </li>
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                    Build a system where users can find information about vehicles:
+                    Make a car comparison feature; Make recently viewed; Make information tabs: General information, financial information, showroom, library, car news;...
+                    </li>
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                    Making a virtual showroom system based on the customer's 3d model using google's model-viewer
+                    </li>
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                      Make landing pages
+                    </li>
+                  </ul>
+                  <div class="portfolio__card-describe-item-experience-tech">
+                    <span class="property--highlight">Technologies:</span> Angular 9,
+                    RxJs, HTML, SCSS, ReactJS, redux- saga, redux-toolkit.
+                  </div>
+                  <div class="property--highlight">Images: </div>
+                  <div class="gallery">
+                    <img rel="preload" src="./assets/images/homepage.png"  />
+                    <img rel="preload" src="./assets/images/realestate.png"  />
+                    <img rel="preload" src="./assets/images/listingdetail.png"  />
+                    <img rel="preload" src="./assets/images/listingmessage.png"  />
+                    <img rel="preload" src="./assets/images/tindangcuatoi.png"  />
+                    <img rel="preload" src="./assets/images/project.png"  />
+                    <img rel="preload" src="./assets/images/car.png"  />
+                    <img rel="preload" src="./assets/images/searchcar.png"  />
+                    <img rel="preload" src="./assets/images/carbrand.png"  />
+                    <img rel="preload" src="./assets/images/carcompare.png"  />
+                    <img rel="preload" src="./assets/images/carcompareoption.png"  />
+                    <img rel="preload" src="./assets/images/comparecar.png"  />
+                    <img rel="preload" src="./assets/images/cardetail.png"  />
+                    <img rel="preload" src="./assets/images/cargeneral.png"  />
+                    <img rel="preload" src="./assets/images/carcargo.png"  />
+                    <img rel="preload" src="./assets/images/carimage.png"  />
+                    <img rel="preload" src="./assets/images/landingpage.png"  />
+                    <img rel="preload" src="./assets/images/virtualshowroom.png" />
+                    <img rel="preload" src="./assets/images/overviewvs.png" />
+                    <img rel="preload" src="./assets/images/outside.png" />
+                    <img rel="preload" src="./assets/images/outsidecolor.png" />
+                    <img rel="preload" src="./assets/images/outsideoption.png" />
+                    <img rel="preload" src="./assets/images/inside.png" />
+                    <img rel="preload" src="./assets/images/insidereview.png" />
+                  </div>
+                </div>
+                <div class="portfolio__card-describe-item-experience-attribute">
+                  <img
+                    class="portfolio__card-describe-item-experience-company"
+                    src="https://www.hitachivantara.com/content/dam/public/en_us/images/sharing-graphic.jpg"
+                  />
+                  <div class="portfolio__card-describe-item-experience-year">
+                    <span class="property--highlight">Time:</span> 4/2021 - 8/2021
+                  </div>
+                  <div>
+                    <span class="property--highlight">Project:</span> Zonar Self Service
+                  </div>
+                  <div class="portfolio__card-describe-item-experience-title">
+                    <span class="property--highlight">Title:</span> Software Engineer
+                  </div>
+                  <div
+                    class="portfolio__card-describe-item-experience-description"
+                  >
+                    <span class="property--highlight">Description:</span> A
+                    management system application in the Zonar system. It
+                    manages the companies, divisions, users, and assets of all
+                    other Zonar applications.
+                  </div>
+                  <div class="property--highlight">Responsibilities:</div>
+                  <ul
+                    class="portfolio__card-describe-item-experience-responsibilities"
+                  >
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                    Directly work with the customer for clarifying requirements, and solution discussion.
+                    
+                    </li>
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                    Maintenance project.
+                    </li>
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                    Implement management features.
+                    </li>
+                  </ul>
+                  <div class="portfolio__card-describe-item-experience-tech">
+                    <span class="property--highlight">Technologies:</span> Angular 8,
+                    Typescript, RxJs, HTML, SCSS, NgRx, Jasmine/Karma.
+                  </div>
+                  <div class="portfolio__card-describe-item-experience-year">
+                    <span class="property--highlight">Time:</span> 5/2019 - 3/2021
+                  </div>
+                  <div>
+                    <span class="property--highlight">Project:</span> MVS
+                  </div>
+                  <div class="portfolio__card-describe-item-experience-title">
+                    <span class="property--highlight">Title:</span> Software Engineer
+                  </div>
+                  <div
+                    class="portfolio__card-describe-item-experience-description"
+                  >
+                    <span class="property--highlight">Description:</span> A system
+                    that is major in analyzing the image of passengers captured
+                    by the camera in an airport or station so that suspicious
+                    cases for terror and crime can quickly recognize and
+                    reported to the operator.
+                  </div>
+                  <div class="property--highlight">Responsibilities:</div>
+                  <ul
+                    class="portfolio__card-describe-item-experience-responsibilities"
+                  >
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                    Develop and implement new features for analysis.
+                    
+                    </li>
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                    Write unit test for existing function.
+                    </li>
+                    <li
+                      class="portfolio__card-describe-item-experience-responsibilities-content"
+                    >
+                    Directly communicate with the customer via BSE.
+                    </li>
+                  </ul>
+                  <div class="portfolio__card-describe-item-experience-tech">
+                    <span class="property--highlight">Technologies:</span> Angular 8,
+                    Typescript, RxJs, HTML, SCSS, NgRx, Jasmine/Karma.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/libs/jquery/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
